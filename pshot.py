@@ -6,11 +6,11 @@ def check(arr):
 			a+=arr[x]
 		else:
 			b+=arr[x]
-		if a==len(arr)-1 and b<=(x+1)//2:
-			return x+1
+			if a==len(arr)//2-1 and b<=(x+1)//2:
+				return x+1
 	return x+1
 t=int(input())
 for x in range(t):
 	n=int(input())
-	arr=[int(a) for a in input().rstrip().split()]
+	arr=[int(x) for x in list(input())]
 	print(check(arr))
