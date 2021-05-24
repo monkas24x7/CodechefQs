@@ -2,7 +2,7 @@ def check(s,p,v):
 	if p%(s+1)==0:
 		return (p//(s+1))*v
 	else:
-		return p//s+1
+		return (p//(s+1))*v
 t=int(input())
 for x in range(t):
 	n=int(input())
