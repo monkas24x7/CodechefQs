@@ -1,10 +1,7 @@
-import numpy as np
 def check(D,d,p,q):
-	n=int(D/d)
+	n=D//d
 	rem=D%d
-	total=int(n*p+n*(n-1)*q/2)*d
-	if rem!=0:
-		total+=(p+n*q)*(D%d)
+	total=(((n*p+(((n**2-n)*q)/2))*d)+(rem*(p+(n*q))))
 	return total 
 n=int(input())
 for x in range(n):
